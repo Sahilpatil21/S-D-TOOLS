@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – S D TOOLS</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    .hero-section {
+      height: 60vh;
+      background: url('/assets/images/about1.jpeg') center center / cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+    }
+
+    .company-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR (matching Home) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">S D TOOLS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (uses aboutus.jpeg as background with overlay) -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">About S D TOOLS</h1>
+      <p class="lead">Precision tool manufacturing • Custom solutions • Trusted service</p>
+      <a href="/contact" class="btn btn-warning mt-3 px-4 py-2 fw-bold">Get a Quote</a>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <h2 class="section-title">Who We Are</h2>
+
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <img src="/assets/images/aboutus.jpeg" alt="Company" class="company-img shadow-sm">
+      </div>
+
+      <div class="col-lg-6">
+        <p class="fs-5 text-muted">
+          S D TOOLS is a precision tool manufacturing company delivering high-quality industrial tools,
+          cutting tools, and custom-made solutions. With proven expertise in carbide tooling and resharpening,
+          we help industries improve productivity and precision.
+        </p>
+        <p class="fs-5 text-muted"><h5><h4 style="color: red;">Address</h4>Plot No.224,Sr.No.-283,Hanumannagar,Behind Sound Casting, MIDC,Shiroli,Kolhapur-416122</h3></p>
+
+        <ul class="list-unstyled">
+          <li><strong>25+ Years</strong> experience in tool manufacturing</li>
+          <li><strong>500+ Clients</strong> across industrial sectors</li>
+          <li><strong>Custom Solutions</strong> tailored to your requirements</li>
+          <li><strong>Contact Number</strong> +91 9763778015</li>
+          <li><strong>Email</strong>: sdtools09@gmail.com</li>
+        </ul>
+
+        <a href="/products" class="btn btn-outline-dark mt-3">View Products</a>
+      </div>
+    </div>
+
+    <section class="mt-5">
+      <h3 class="section-title">Mission & Vision</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Our Mission</h5>
+          <p class="text-muted">Manufacture premium-quality industrial tools that enhance productivity, safety, and precision.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Our Vision</h5>
+          <p class="text-muted">To be a leading tool brand known for innovation, reliability and cost-effectiveness.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h3 class="section-title">Why Choose Us</h3>
+      <div class="row text-center">
+        <div class="col-md-3 mb-3">
+          <div class="p-3 border rounded shadow-sm">
+            <h6 class="fw-bold">Quality</h6>
+            <p class="text-muted small">High-grade materials & strict testing</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="p-3 border rounded shadow-sm">
+            <h6 class="fw-bold">Expert Team</h6>
+            <p class="text-muted small">Experienced engineers & staff</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="p-3 border rounded shadow-sm">
+            <h6 class="fw-bold">Customization</h6>
+            <p class="text-muted small">Custom designs based on requirements</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="p-3 border rounded shadow-sm">
+            <h6 class="fw-bold">Support</h6>
+            <p class="text-muted small">Reliable customer assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (matching Home) -->
+  <footer>
+    © <%= new Date().getFullYear() %> S D TOOLS | All Rights Reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

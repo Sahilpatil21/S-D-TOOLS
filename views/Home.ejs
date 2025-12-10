@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S D TOOLS | Precision Tool Manufacturing</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        .hero-section {
+    height: 80vh;
+    background: url('/assets/images/Coverimage.jpeg') center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45); /* dark overlay for text visibility */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">S D TOOLS</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+
+                    <% if (user) { %>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                    <% } else { %>
+                        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <% } %>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+   <!-- HERO SECTION -->
+<section class="hero-section">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">High Precision Cutting Tools</h1>
+        <p class="lead">Drills • Endmills • Ballnose • Carbide Tools • Resharp Manufacturing</p>
+        <a href="/contact" class="btn btn-warning mt-3 px-4 py-2 fw-bold">Get a Quote</a>
+    </div>
+
+</section>
+    <!-- ABOUT PREVIEW -->
+    <div class="container my-5">
+        <h2 class="section-title">Who We Are</h2>
+        <p class="text-center fs-5">
+            At <strong>S D TOOLS</strong>, we specialize in solid carbide tool manufacturing, 
+            resharpening, custom cutters, endmills, ballnose tools and precision tool solutions 
+            for industrial applications.
+        </p>
+    </div>
+
+    <!-- PRODUCT PREVIEW -->
+    <div class="container my-5">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="/assets/images/resharpning.jpeg" class="product-img" alt="Drill">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Drill Tools</h5>
+                        <p class="card-text">High precision carbide drills for industrial use.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="/assets/images/endmill.jpeg" class="product-img" alt="Endmill">
+                    <div class="card-body">
+                        <h5 class="card-title">End Mills</h5>
+                        <p class="card-text">Endmills for steel, aluminum & high-speed machining.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="/assets/images/ballnose.jpeg" class="product-img" alt="Ballnose">
+                    <div class="card-body">
+                        <h5 class="card-title">Ball Nose Cutters</h5>
+                        <p class="card-text">Ballnose tools for precision finishing operations.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SERVICES PREVIEW -->
+    <div class="container my-5">
+        <h2 class="section-title">What We Do</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Tool Manufacturing</h5>
+                <p>High precision carbide tools manufactured using CNC grinding machines.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Re-Sharpening</h5>
+                <p>Restore performance and accuracy with expert tool sharpening services.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Custom Tools</h5>
+                <p>Custom made cutters based on your industrial requirements.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © <%= new Date().getFullYear() %> S D TOOLS | All Rights Reserved
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

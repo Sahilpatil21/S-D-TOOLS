@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services – S D TOOLS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    .hero-section {
+      height: 40vh;
+      background: url('/assets/images/Coverimage.jpeg') center center / cover no-repeat;
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .hero-overlay { position:absolute; inset:0; background: rgba(0,0,0,0.45); }
+    .hero-content { position:relative; z-index:2; color:white; text-align:center; }
+    .service-icon {
+      font-size: 2.2rem;
+      color: #ffc107;
+    }
+    .service-card { border-radius: .6rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+    .section-title { font-weight:700; margin-bottom:20px; text-align:center; }
+    footer { background:#222; padding:18px; text-align:center; color:white; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">S D TOOLS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-5 fw-bold">Our Services</h1>
+      <p class="lead">Precision tooling, resharpening, custom manufacturing and more.</p>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <h2 class="section-title">What We Offer</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">⚙️</span>
+          </div>
+          <h5 class="fw-bold">Tool Manufacturing</h5>
+          <p class="text-muted">High-precision carbide tools manufactured using CNC grinding and quality inspection.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Request Quote</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">🔧</span>
+          </div>
+          <h5 class="fw-bold">Re-sharpening</h5>
+          <p class="text-muted">Expert resharpening to restore tool geometry and extend life—fast turnaround.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Request Service</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">🧰</span>
+          </div>
+          <h5 class="fw-bold">Custom Tools</h5>
+          <p class="text-muted">Custom design from CAD to production — tailored cutters for your process.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Start a Project</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">📦</span>
+          </div>
+          <h5 class="fw-bold">Small-batch Manufacturing</h5>
+          <p class="text-muted">Short-run production with consistent tolerances and quick delivery.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Enquire</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">🔎</span>
+          </div>
+          <h5 class="fw-bold">Quality Inspection</h5>
+          <p class="text-muted">Measurement and inspection services to ensure parts meet specs.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Get Details</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="p-4 bg-white service-card h-100">
+          <div class="mb-3">
+            <span class="service-icon">📐</span>
+          </div>
+          <h5 class="fw-bold">Engineering Support</h5>
+          <p class="text-muted">Application advice, tooling selection and process optimization support.</p>
+          <a href="/contact" class="btn btn-sm btn-warning mt-2">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="my-5 text-center">
+      <h3 class="fw-bold">Need a Custom Quote?</h3>
+      <p class="text-muted">Tell us your requirements and we'll reply with a proposal.</p>
+      <a href="/contact" class="btn btn-lg btn-warning px-4">Get a Quote</a>
+    </section>
+  </main>
+
+  <footer>
+    © <%= new Date().getFullYear() %> S D TOOLS | All Rights Reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

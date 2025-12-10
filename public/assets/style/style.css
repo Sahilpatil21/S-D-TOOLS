@@ -1,0 +1,5 @@
+.about-hero {
+    height: 45vh;
+    background: url('/assets/images/about-bg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products – S D TOOLS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    .hero-section {
+      height: 40vh;
+      background: url('/assets/images/Coverimage.jpeg') center center / cover no-repeat;
+      position: relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .hero-overlay { position:absolute; inset:0; background: rgba(0,0,0,0.45); }
+    .hero-content { position:relative; z-index:2; color:white; text-align:center; }
+    .product-img {
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:6px 6px 0 0;
+    }
+    .card-product { border-radius:8px; overflow:hidden; }
+    .section-title { font-weight:700; margin-bottom:20px; text-align:center; }
+    footer { background:#222; padding:18px; text-align:center; color:white; }
+
+    /* Video section styling */
+    .video-wrapper {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">S D TOOLS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-5 fw-bold">Our Products</h1>
+      <p class="lead">High-precision cutting tools — drills, endmills, ballnose cutters and more.</p>
+    </div>
+  </section>
+
+  <main class="container my-5">
+
+    <!-- PRODUCTS -->
+    <h2 class="section-title">Featured Products</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-product shadow-sm">
+          <img src="/assets/images/resharpning.jpeg" alt="Drill Tools" class="product-img">
+          <div class="card-body">
+            <h5 class="card-title">Drill Tools</h5>
+            <p class="card-text text-muted">High precision carbide drills designed for durability and accuracy.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/contact" class="btn btn-sm btn-warning">Request Quote</a>
+              <small class="text-muted">From ₹ — (enquire)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-product shadow-sm">
+          <img src="/assets/images/endmill.jpeg" alt="End Mills" class="product-img">
+          <div class="card-body">
+            <h5 class="card-title">End Mills</h5>
+            <p class="card-text text-muted">Endmills for steel, aluminium and high-speed machining applications.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/contact" class="btn btn-sm btn-warning">Request Quote</a>
+              <small class="text-muted">Custom sizes available</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-product shadow-sm">
+          <img src="/assets/images/ballnose.jpeg" alt="Ball Nose Cutters" class="product-img">
+          <div class="card-body">
+            <h5 class="card-title">Ball Nose Cutters</h5>
+            <p class="card-text text-muted">Precision finishing tools for smooth surface generation and contours.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/contact" class="btn btn-sm btn-warning">Request Quote</a>
+              <small class="text-muted">High polish options</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-product shadow-sm">
+          <img src="/assets/images/resharpning.jpeg" alt="Resharpening" class="product-img">
+          <div class="card-body">
+            <h5 class="card-title">Resharpening</h5>
+            <p class="card-text text-muted">Expert tool resharpening and refurbishment services to extend tool life.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/contact" class="btn btn-sm btn-warning">Request Service</a>
+              <small class="text-muted">Fast turnaround</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-product shadow-sm">
+          <img src="/assets/images/endmill.jpeg" alt="Custom Tools" class="product-img">
+          <div class="card-body">
+            <h5 class="card-title">Custom Tools</h5>
+            <p class="card-text text-muted">Custom-made cutters tailored to your production requirements.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/contact" class="btn btn-sm btn-warning">Request Custom Quote</a>
+              <small class="text-muted">CAD to production</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEO SECTION -->
+    <h2 class="section-title mt-5">Product Video Demonstrations</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="video-wrapper">
+          <video controls width="100%" muted autoplay>
+            <source src="/assets/videos/cutter1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="video-wrapper">
+          <video controls width="100%" muted autoplay>
+            <source src="/assets/videos/cutter2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="video-wrapper">
+          <video controls width="100%" muted autoplay>
+            <source src="/assets/videos/cutter3.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © <%= new Date().getFullYear() %> S D TOOLS | All Rights Reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
