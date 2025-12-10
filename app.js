@@ -23,8 +23,8 @@ app.get("/", (req, res) => res.render("Home", { user: null }));
 app.get("/about", (req, res) => res.render("About"));
 app.get("/register", (req, res) => res.render("Register"));
 app.get("/login", (req, res) => res.render("Login"));
-app.get("/products", (req, res) => res.render("Products"));
-app.get("/services", (req, res) => res.render("Services"));
+app.get("/products", (req, res) => res.render("products"));
+app.get("/services", (req, res) => res.render("services"));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
